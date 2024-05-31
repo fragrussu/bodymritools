@@ -36,7 +36,7 @@ def signal_gen(mri_seq,tissue_par):
 		         S = S0*(fv*exp(-b Dv - TE/T2v) + (1 - fv)*exp( -b Dt + (Kt/6)*(b Dt)^2 - TE/T2t)
 	     
 	    Author: Francesco Grussu, Vall d Hebron Institute of Oncology, Barcelona, Spain
-		   <fgrussu@vhio.net> <francegrussu@gmail.com>'''
+		   <fgrussu@vhio.net>'''
 	
 
 	### Handle inputs
@@ -118,7 +118,7 @@ def Fobj(tissue_par,mri_seq,meas,sgmnoise,navg,parmin,parmax,wtikh):
 		     -- pmax_k is the upper bound for the k-th tissue parameter
 	     
 	    Author: Francesco Grussu, Vall d Hebron Institute of Oncology,Barcelona, Spain
-		   <fgrussu@vhio.net> <francegrussu@gmail.com>'''
+		   <fgrussu@vhio.net>'''
 	
 	
 	### Get noise floor
@@ -202,7 +202,7 @@ def GridSearch(mri_seq,meas,sgmnoise,navg,parmin=[0.8,0.0,4.0,150.0,0.2,0.0,20.0
 	    - fobj_grid:       value of the minimised objective function  Fobj()
 	     
 	    Author: Francesco Grussu, Vall d Hebron Institute of Oncology, Barcelona, Spain
-		   <fgrussu@vhio.net> <francegrussu@gmail.com>'''
+		   <fgrussu@vhio.net>'''
 	
 	
 	### Get noise floor
@@ -326,7 +326,7 @@ def FitSlice(data):
 		    Fitted parameters in data_out will be stored as double-precision floating point (FLOAT64)
 	     
 	    Author: Francesco Grussu, Vall d Hebron Institute of Oncology, Barcelona, Spain
-		   <fgrussu@vhio.net> <francegrussu@gmail.com>'''
+		   <fgrussu@vhio.net>'''
 
 	
 	### Extract signals and sequence information from the input list
@@ -501,7 +501,7 @@ def FitModel(sig_nifti,seq_text,output_rootname,ncpu=1,mask_nifti=None,sigma_nif
 	           are of the order of approx SMAX/3)
 	                
 	    Author: Francesco Grussu, Vall d Hebron Institute of Oncology, Barcelona, Spain
-		   <fgrussu@vhio.net> <francegrussu@gmail.com>'''
+		   <fgrussu@vhio.net>'''
 	
 	
 	### Get time
@@ -781,7 +781,7 @@ if __name__ == "__main__":
 
 	
 	### Print help and parse arguments
-	parser = argparse.ArgumentParser(description='Non-linear least square fitting with offset-Gaussian noise model and Tikhonov regularisation of the two-pool T2-IVIM-Kurtosis model to diffusion MRI images obtained by varying b-value b and echo time TE. This provides voxel-wise stimates of s0 (apparent proton density), fv (vascular signal fraction), Dv (vascular apparent diffusion coefficient), T2v (vascular T2), Dt (tissue apparent diffusion coefficient), Kt (tissue apparent excess kurtosis coefficient), T2t (tissue T2), so that the signal model is s(b,TE) = s0*(fv*exp(-bDv -TE/T2v) + (1-fv)*exp(-bDt +(Kt/6)*b^2*Dt^2 -TE/T2t )). Note that this code can be used even if the TE was not varied during acquisition: in this latter case, a very short "fake" TE value (e.g., 1ms) should be indicated for all MRI measurements, and both T2v and T2t should be fixed to a very long "fake" value (e.g., 1000ms) using options --pmin and --pmax (see below). Dependencies: argparse, os, sys, multiprocessing, time (python standard library); numpy, scipy and nibabel. Author: Francesco Grussu, Vall d Hebron Institute of Oncology, Barcelona, Spain (<fgrussu@vhio.net> <francegrussu@gmail.com>)')
+	parser = argparse.ArgumentParser(description='Non-linear least square fitting with offset-Gaussian noise model and Tikhonov regularisation of the two-pool T2-IVIM-Kurtosis model to diffusion MRI images obtained by varying b-value b and echo time TE. This provides voxel-wise stimates of s0 (apparent proton density), fv (vascular signal fraction), Dv (vascular apparent diffusion coefficient), T2v (vascular T2), Dt (tissue apparent diffusion coefficient), Kt (tissue apparent excess kurtosis coefficient), T2t (tissue T2), so that the signal model is s(b,TE) = s0*(fv*exp(-bDv -TE/T2v) + (1-fv)*exp(-bDt +(Kt/6)*b^2*Dt^2 -TE/T2t )). Note that this code can be used even if the TE was not varied during acquisition: in this latter case, a very short "fake" TE value (e.g., 1ms) should be indicated for all MRI measurements, and both T2v and T2t should be fixed to a very long "fake" value (e.g., 1000ms) using options --pmin and --pmax (see below). Dependencies: argparse, os, sys, multiprocessing, time (python standard library); numpy, scipy and nibabel. Author: Francesco Grussu, Vall d Hebron Institute of Oncology, Barcelona, Spain (<fgrussu@vhio.net>)')
 	parser.add_argument('dwi', help='4D Nifti file of magnitude images from a diffusion MRI experiment obtained by varying b-value b and echo time TE.')
 	parser.add_argument('scheme', help='text file storing b-values and echo times used to acquired the images (space-separated elements; 1st row: b-values in s/mm^2; 2nd row: echo times TE in ms). If all images were acquired with the same echo time (so that vascular/tissue T2 cannot be modelled), enter a very short TE for all measurement (e.g., 1 ms) and fix both vascular and tissue T2 to a very long value (for instance, 1000 ms) using the --pmin and --pmax options below.')
 	parser.add_argument('out', help='root name for output files, to which the following termination strings will be added: "*_s0.nii" for the apparent proton density map; "*_fv.nii" for the vascular signal fraction map; "*_dv.nii" for the vascular apparent diffusion coefficient map (in um2/ms); "*_t2v.nii" for the vascular T2 map (in ms); "*_dt.nii" for the tissue apparent diffusion coefficien map (in um2/ms); "*_kt.nii" for the tissue apparent excess kurtosis map; "*_t2t.nii" for the tissue T2 (in ms); "*_fobj.nii" for the fitting objective function; "*_exit.nii" for the fitting exit code (1: success; -1: warning; 0: background); "*_nfloor.nii" for the noise floor map (if a noise map sigma was provided with option --sigma)')
