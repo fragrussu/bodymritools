@@ -4,7 +4,7 @@ This repository contains several scripts and routines that one may find useful f
 
 **The project that gave rise to these results received the support of a fellowship from ”la Caixa” Foundation (ID 100010434). The fellowship code is "LCF/BQ/PR22/11920010"**. 
 
-If you use _**bodymritools**_ for your research, please cite our preprint:
+If you use _bodymritools_ for your research, please cite our preprint:
 
 *Francesco Grussu, Kinga Bernatowicz, Marco Palombo, Irene Casanova-Salas, Ignasi Barba, Sara Simonetti, Garazi Serna, Athanasios Grigoriou, Anna Voronova, Valezka Garay, Juan Francisco Corral, Marta Vidorreta, Pablo Garcia-Polo Garcia, Xavier Merino, Richard Mast, Nuria Roson, Manuel Escobar, Maria Vieito, Rodrigo Toledo, Paolo Nuciforo, Joaquin Mateo, Elena Garralda, Raquel Perez-Lopez*. **"Histology-informed liver diffusion MRI: biophysical model design and demonstration in cancer immunotherapy"**.  medRxiv 2024: 2024.04.26.24306429, doi: [10.1101/2024.04.26.24306429](https://doi.org/10.1101/2024.04.26.24306429). 
 <div align="center">
