@@ -15,7 +15,7 @@ def GetPatchWiseMaps(flist,H,W,Hp,Wp,Zp,out,SzMax=35.0):
 	'''
 	This program converts a CSV file storing information on cell detection from high-resolution optical imaging of
 	stained histological sections to a patch-wise parametric maps for comparison with Magnetic Resonance Imaging (MRI). 
-	Author: Francesco Grussu, Vall d Hebron Institute of Oncology (<fgrussu@vhio.net><francegrussu@gmail.com>). 
+	Author: Francesco Grussu, Vall d Hebron Institute of Oncology (<fgrussu@vhio.net>). 
 	Copyright (c) 2024 Vall d Hebron Institute of Oncology (VHIO), Barcelona, Spain. All rights reserved.
 	
 	INTERFACE
@@ -295,7 +295,7 @@ if __name__ == "__main__":
 
 	
 	### Print help and parse arguments
-	parser = argparse.ArgumentParser(description='This program converts a CSV file storing information on cell detection from high-resolution optical imaging of stained histological sections to a patch-wise parametric maps for comparison with Magnetic Resonance Imaging (MRI). Author: Francesco Grussu, Vall d Hebron Institute of Oncology (<fgrussu@vhio.net><francegrussu@gmail.com>). Copyright (c) 2021 Vall d Hebron Institute of Oncology (VHIO), Barcelona, Spain. All rights reserved.')
+	parser = argparse.ArgumentParser(description='This program converts a CSV file storing information on cell detection from high-resolution optical imaging of stained histological sections to a patch-wise parametric maps for comparison with Magnetic Resonance Imaging (MRI). Author: Francesco Grussu, Vall d Hebron Institute of Oncology (<fgrussu@vhio.net>). Copyright (c) 2021 Vall d Hebron Institute of Oncology (VHIO), Barcelona, Spain. All rights reserved.')
 	parser.add_argument('csv_list', help='list of paths to CSV files storing the cell segmentation information (multiple files may be required for very large histological images). This code expect CSV files containing the following columns: -- column with variable name "Cell: Area", where different cell areas from all detected cells are reported in um^2, -- columns with variable names "Centroid X µm" and "Centroid Y µm", storing the position of cells (in um) along the X (horizontal, i.e. image width) and Y (vertical, i.e. image height) direction -- column with variable name "Cell: Eosin OD mean", storing the estimated mean eosin signal value per cell')
 	parser.add_argument('Hfov', help='field-of-view along the vertical direction (i.e. image height, in um) of the source histological image on which cells where segmented')
 	parser.add_argument('Wfov', help='field-of-view along the horizontal direction (i.e. image width, in um) of the source histological image on which cells where segmented')
