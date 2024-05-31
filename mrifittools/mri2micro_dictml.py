@@ -250,7 +250,7 @@ def run(mrifile, sdictfile, pdictfile, output, maskfile=None, noisefile=None, na
 	    Developed and validated with versions: nibabel 3.2.1, numpy 1.21.5, scipy 1.7.3. 
 	    
 	    Author: Francesco Grussu, Vall d Hebron Institute of Oncology (VHIO). 
-	    Email: <francegrussu@gmail.com> <fgrussu@vhio.net>
+	    Email: <fgrussu@vhio.net>
 	    
 	    USAGE
 	    run(mrifile, sdictfile, pdictfile, output, maskfile=None, noisefile=None, navg=1, ...
@@ -363,7 +363,7 @@ def run(mrifile, sdictfile, pdictfile, output, maskfile=None, noisefile=None, na
 	    - scipy 1.7.3
 
 	    Author: Francesco Grussu, Vall d'Hebron Institute of Oncology, November 2022
-		    <fgrussu@vhio.net> <francegrussu@gmail.com>'''
+		    <fgrussu@vhio.net>'''
 
 
 	### Get time
@@ -851,7 +851,7 @@ def run(mrifile, sdictfile, pdictfile, output, maskfile=None, noisefile=None, na
 if __name__ == "__main__":
 
 	### Print help and parse arguments
-	parser = argparse.ArgumentParser(description='This tool performs maximum-likelihood fitting of a quantitative MRI signal model that is not known analytically, but that is approximated numerically given examples of signals and tissue parameters. Third-party dependencies: nibabel, numpy, scipy. Developed and validated with versions: nibabel 3.2.1, numpy 1.21.5, scipy 1.7.3. Author: Francesco Grussu, Vall d Hebron Institute of Oncology (VHIO). Email: <francegrussu@gmail.com> <fgrussu@vhio.net>.')
+	parser = argparse.ArgumentParser(description='This tool performs maximum-likelihood fitting of a quantitative MRI signal model that is not known analytically, but that is approximated numerically given examples of signals and tissue parameters. Third-party dependencies: nibabel, numpy, scipy. Developed and validated with versions: nibabel 3.2.1, numpy 1.21.5, scipy 1.7.3. Author: Francesco Grussu, Vall d Hebron Institute of Oncology (VHIO). Email: <fgrussu@vhio.net>.')
 	parser.add_argument('s_file', help='path of a 4D NIFTI file storing M quantitative MRI measurements acquired (e.g., diffusion MRI at different b-values and/or diffusion time; relaxometry at increasing echo times; etc). Each voxel should contain a signal defined in [0; 1]. In diffusion MRI, this can be obtained by dividing each voxel for the signal at b = 0')
 	parser.add_argument('sig_dict', help='path of a NumPy binary file (.npy) storing a dictionary of synthetic MRI measurements to be used formodel fitting. The file should contain a variable storing a 2D numpy matrix of size Nmicro x M,where Nmicro is the number of example microstructures in the dictionary and Nmeas is the number of MRIsignal measurements.  This implies that different example microstructures are arranged along rows,while the different MRI measurements coming from a given microstructure are arranged along columns. NOTE 1: the quantitative MRI protocol used to generate "sdictfile" MUST match that used to acquirethe scan to fit stored in the "mrifile" NIFTI. NOTE 2: the signal dictionary should be defined in [0; 1].')
 	parser.add_argument('par_dict', help='path of a NumPy binary file (.npy) storing a dictionary of tissue parameters corresponding to the signals stored in the signal dictionary "sdictfile", to be used for model fitting. The file should contain a variable storing a 2D numpy matrix of size Nmicro x P, where Nmicro is the number of example microstructures in the dictionary and P is the number of tissue parameters. This implies that different example microstructures are arranged along rows, while the values of the different tissue parameters of each microstructure are arranged along columns.')
