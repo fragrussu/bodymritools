@@ -295,7 +295,7 @@ def run(mrifile, tefile, output, maskfile=None, noisefile=None, navg=1, Nword=3,
 	    Developed and validated with versions: nibabel 3.2.1, numpy 1.21.5, scipy 1.7.3.
 	    
 	    Author: Francesco Grussu, Vall d Hebron Institute of Oncology (VHIO). 
-	    Email: <francegrussu@gmail.com> <fgrussu@vhio.net>.
+	    Email: <fgrussu@vhio.net>.
 	    
 	    USAGE
 	    run(mrifile, tefile, output, maskfile=None, noisefile=None, s0file=None, navg=1, ... 
@@ -445,7 +445,7 @@ def run(mrifile, tefile, output, maskfile=None, noisefile=None, navg=1, Nword=3,
 	    - scipy 1.7.3
 
 	    Author: Francesco Grussu, Vall d'Hebron Institute of Oncology, February 2024
-		    <fgrussu@vhio.net> <francegrussu@gmail.com>'''
+		    <fgrussu@vhio.net>'''
 
 
 	### Get time
@@ -964,7 +964,7 @@ def run(mrifile, tefile, output, maskfile=None, noisefile=None, navg=1, Nword=3,
 if __name__ == "__main__":
 
 	### Print help and parse arguments
-	parser = argparse.ArgumentParser(description='This tool estimates the parameters of a magnitude signal decay model, which is fitted to multi-echo gradient or spin echo measurements via regularised maximum-likelihood non-linear least square fitting. Third-party dependencies: nibabel, numpy, scipy. Developed and validated with versions: nibabel 3.2.1, numpy 1.21.5, scipy 1.7.3. Author: Francesco Grussu, Vall d Hebron Institute of Oncology (VHIO). Email: <francegrussu@gmail.com> <fgrussu@vhio.net>.')
+	parser = argparse.ArgumentParser(description='This tool estimates the parameters of a magnitude signal decay model, which is fitted to multi-echo gradient or spin echo measurements via regularised maximum-likelihood non-linear least square fitting. Third-party dependencies: nibabel, numpy, scipy. Developed and validated with versions: nibabel 3.2.1, numpy 1.21.5, scipy 1.7.3. Author: Francesco Grussu, Vall d Hebron Institute of Oncology (VHIO). Email: <fgrussu@vhio.net>.')
 	parser.add_argument('s_file', help='path of a 4D NIFTI file storing M multi-echo gradient or spin echo MRI measurements acquired at varying TE')
 	parser.add_argument('te_file', help='path of a text file storing a space-separated array of echo times TE in ms, arranged along one row.')
 	parser.add_argument('out', help='root file name of output files; output NIFTIs will be stored as double-precision floating point images(FLOAT64), and the file names will end in *_S0.nii (signal level at TE = 0 -- S0 = S(TE=0)), *_TAms.nii (relaxation time (T2 or T2*) of water pool A, im ms -- TrexA), *_fA.nii (total signal fraction of water pool A -- fA), *_TBms.nii (relaxation time (T2 or T2*) of water pool B, im ms -- TrexB), *_dOmegaBradms-1.nii (off-resonance angular frequency shift of water pool B with respect to pool A, in rad/ms -- dwB), *_fBrel.nii (relative signal fraction of water pool B -- fBrelative; the total signal fraction if fB = fBr x (1 - fA)),*_TBms.nii (relaxation time (T2 or T2*) of water pool B, im ms -- TrexB), *_dOmegaBradms-1.nii (off-resonance angular frequency shift of water pool B with respect to pool A, in rad/ms -- dwB),*_TCms.nii (relaxation time (T2 or T2*) of water pool C, im ms -- TrexC), *_dOmegaCradms-1.nii (off-resonance angular frequency shift of water pool C with respect to pool A, in rad/ms -- dwC), *_exit.nii (voxel-wise exit code; -1: warning, failure in non-linear fitting; 0: background; 1 successful parameter estimation). If a noise map was provided with the noisefile input parameter, additional output NIFTI filesstoring quality of fit metrics are stored, i.e.: *_logL.nii (log-likelihood), *_BIC.nii (Bayesian Information Criterion), and *_AIC.nii (Akaike Information Criterion). The number of parametric maps finally stored depends on the model specified with input parameter modstr(see below). These will be: TrexA, S0 for model "MonoExp" (mono-exponential decay); TrexA, fA, TrexB, S0 for model "BiExp" (bi-exponential decay); TrexA, fA, TrexB, dwB, S0 for model "BiExpOffres" (bi-exponential decay with off-resonance effects); TrexA, fA, TrexB, fBrelative, TrexC, S0 for model "TriExp" (tri-exponential decay); TrexA, fA, TrexB, fBrelative, dwB, TrexC, dwC, S0 for model "TriExpOffres" (tri-exponential decay with off-resonance effects)')
