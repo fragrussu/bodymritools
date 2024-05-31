@@ -353,7 +353,7 @@ def run(mrifile, mriseq, output, maskfile=None, noisefile=None, s0file=None, nav
 	    Developed and validated with versions: nibabel 3.2.1, numpy 1.21.5, scipy 1.7.3.
 	    
 	    Author: Francesco Grussu, Vall d Hebron Institute of Oncology (VHIO). 
-	    Email: <francegrussu@gmail.com> <fgrussu@vhio.net>.
+	    Email: <fgrussu@vhio.net>.
 	    
 	    USAGE
 	    run(mrifile, mriseq, output, maskfile=None, noisefile=None, s0file=None, navg=1, ... 
@@ -494,7 +494,7 @@ def run(mrifile, mriseq, output, maskfile=None, noisefile=None, s0file=None, nav
 	    - scipy 1.7.3
 
 	    Author: Francesco Grussu, Vall d'Hebron Institute of Oncology, November 2022
-		    <fgrussu@vhio.net> <francegrussu@gmail.com>'''
+		    <fgrussu@vhio.net>'''
 
 
 	### Get time
@@ -1005,7 +1005,7 @@ def run(mrifile, mriseq, output, maskfile=None, noisefile=None, s0file=None, nav
 if __name__ == "__main__":
 
 	### Print help and parse arguments
-	parser = argparse.ArgumentParser(description='This tool estimates the parameters of a 2-compartment model of restricted diffusion within spheres and extra-cellular hindered diffusion, via regularised non-linear optimisation of  a likelihood function under an offset-Gaussian noise model.Third-party dependencies: nibabel, numpy, scipy. Developed and validated with versions: nibabel 3.2.1, numpy 1.21.5, scipy 1.7.3. Author: Francesco Grussu, Vall d Hebron Institute of Oncology (VHIO). Email: <francegrussu@gmail.com> <fgrussu@vhio.net>.')
+	parser = argparse.ArgumentParser(description='This tool estimates the parameters of a 2-compartment model of restricted diffusion within spheres and extra-cellular hindered diffusion, via regularised non-linear optimisation of  a likelihood function under an offset-Gaussian noise model.Third-party dependencies: nibabel, numpy, scipy. Developed and validated with versions: nibabel 3.2.1, numpy 1.21.5, scipy 1.7.3. Author: Francesco Grussu, Vall d Hebron Institute of Oncology (VHIO). Email: <fgrussu@vhio.net>.')
 	parser.add_argument('s_file', help='path of a 4D NIFTI file storing M diffusion MRI measurements acquired at multiple b-values and diffusion times')
 	parser.add_argument('scheme_file', help='path of a text file storing information on b-values and diffusion times  corresponding to each volume of s_file. The acquisition must be a standard pulsed gradient spin echo (PGSE, also known as single linear diffusion encoding). This file must contain a space-separated array of 3 x M elements, arranged along 3 lines  (first line: b-values in s/mm2; second line: gradient duration delta in ms; third line: gradient separation Delta in ms).')
 	parser.add_argument('out', help='root file name of output files; output NIFTIs will be stored as double-precision floating point images  (FLOAT64), and the file names will end in  *_Lum.nii (cell diameter L in um),  *_D0um2ms-1.nii (intrinsic intra-cellular diffusivity D0 in um2/ms), *_Dexinfum2ms-1.nii (extra-cellular apparent diffusion coefficient parameter Dexinf in um2/ms), *_Betaum2.nii (extra-cellular apparent diffusion coefficient parameter Beta -- note that the  extra-cellular apparent diffusion coefficient Dex is written as Dex = Dexinf + Beta/t, where t is  the gradient separation of measurements kept after b-value thresholding (see input parameter bth),  *_fin.nii (intra-cellular tissue signal fraction Fin), *_S0.nii (non-DW signal level S0), *_cellsmm-2.nii (2D histology-like cellularity C in cells/mm2), *_cellsmm-3.nii (cellularity C in cells/mm3),  *_exit.nii (voxel-wise exit code; -1: warning, failure in non-linear fitting; 0: background; 1 successful parameter estimation). If a noise map was provided with the noisefile input parameter, additional output NIFTI files storing quality of fit metrics are stored, i.e.: *_logL.nii (log-likelihood), *_BIC.nii (Bayesian Information Criterion), and *_AIC.nii (Akaike Information Criterion). The number of parametric maps outputted depends on the model specified with input parameter modstr (see below). These will be:  L, D0, Fin, S0 for model "Din"; L, D0, Dexinf, Fin, S0 for model "DinDex"; L, D0, Dexinf, Beta, Fin, S0 for model "DinDexTD"')
