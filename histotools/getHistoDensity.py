@@ -9,7 +9,7 @@ def run(flist,H,W,Hp,Wp,Zp,out):
 	'''
 	This program converts a CSV file storing information on cell detection from high-resolution optical imaging of stained histological sections 
 	to patch-wise parametric maps of cell density, intra-cellular fraction and mean cell area in NIFTI format.
-	Author: Francesco Grussu, Vall d Hebron Institute of Oncology (<fgrussu@vhio.net><francegrussu@gmail.com>). 
+	Author: Francesco Grussu, Vall d Hebron Institute of Oncology (<fgrussu@vhio.net>). 
 	Copyright (c) 2022 Vall d Hebron Institute of Oncology (VHIO), Barcelona, Spain. All rights reserved.
 	
 	INTERFACE
@@ -210,7 +210,7 @@ if __name__ == "__main__":
 
 	
 	### Print help and parse arguments
-	parser = argparse.ArgumentParser(description='This program converts a CSV file storing information on cell detection from high-resolution optical imaging of stained histological sections to patch-wise parametric maps of cell density, intra-cellular fraction and mean cell area in NIFTI format. Author: Francesco Grussu, Vall d Hebron Institute of Oncology (<fgrussu@vhio.net><francegrussu@gmail.com>). Copyright (c) 2022 Vall d Hebron Institute of Oncology (VHIO), Barcelona, Spain. All rights reserved.')
+	parser = argparse.ArgumentParser(description='This program converts a CSV file storing information on cell detection from high-resolution optical imaging of stained histological sections to patch-wise parametric maps of cell density, intra-cellular fraction and mean cell area in NIFTI format. Author: Francesco Grussu, Vall d Hebron Institute of Oncology (<fgrussu@vhio.net>). Copyright (c) 2022 Vall d Hebron Institute of Oncology (VHIO), Barcelona, Spain. All rights reserved.')
 	parser.add_argument('csv_list', help='list of paths to CSV files storing the cell detection information (multiple files may be required for very large histological images). This code expects CSV files containing at least three columns, whose variable names are "Centroid_X", "Centroid_Y" and "Area". These are assumed to storee the position of cells (in um) along the X (horizontal, i.e. image width) and Y (vertical, i.e. image height) direction, as well as cell area (in um2)')
 	parser.add_argument('Hfov', help='field-of-view along the vertical direction (i.e. image height, in um) of the source histological image on which cells where segmented')
 	parser.add_argument('Wfov', help='field-of-view along the horizontal direction (i.e. image width, in um) of the source histological image on which cells where segmented')
