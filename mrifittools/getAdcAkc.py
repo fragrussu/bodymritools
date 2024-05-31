@@ -249,7 +249,7 @@ def run(mrifile, mriseq, output, maskfile=None, noisefile=None, navg=1, Nword=10
 	    Third-party dependencies: nibabel, numpy, scipy
 
 	    Author: Francesco Grussu, Vall d'Hebron Institute of Oncology, August 2022
-		    <fgrussu@vhio.net> <francegrussu@gmail.com>'''
+		    <fgrussu@vhio.net>'''
 
 
 	### Get time
@@ -595,7 +595,7 @@ def run(mrifile, mriseq, output, maskfile=None, noisefile=None, navg=1, Nword=10
 if __name__ == "__main__":
 
 	### Print help and parse arguments
-	parser = argparse.ArgumentParser(description='Fit a phenomenological representation of the diffusion MRI signal acquired at varying b-values based on the apparent diffusion coefficient (ADC) and apparent excess kurtosis coefficient (AKC). Third-party dependencies: nibabel, numpy, scipy. Author: Francesco Grussu, Vall d Hebron Institute of Oncology (VHIO). Email: <francegrussu@gmail.com> <fgrussu@vhio.net>.')
+	parser = argparse.ArgumentParser(description='Fit a phenomenological representation of the diffusion MRI signal acquired at varying b-values based on the apparent diffusion coefficient (ADC) and apparent excess kurtosis coefficient (AKC). Third-party dependencies: nibabel, numpy, scipy. Author: Francesco Grussu, Vall d Hebron Institute of Oncology (VHIO). Email: <fgrussu@vhio.net>.')
 	parser.add_argument('s_file', help='path of a 4D NIFTI file storing M diffusion MRI measurements acquired at multiple b-values ')
 	parser.add_argument('bval_file', help='path of a text file storing a list of b-values in s/mm2 (space-separated, in FSL format), with each element of this list indicating the b-value of the corresponding diffusion-weighted volume in the input 4D NIFTI file')
 	parser.add_argument('out', help='root file name of output files; output NIFTIs will be stored as double-precision floating point images (FLOAT64), and the file names will end in: *_ADC.nii (ADC map um2/ms), *_AKC.nii (excess kurtosis map), *_S0.nii (estimate of the MRI signal at b = 0), *_exit.nii (voxel-wise exit code; -1: warning, error in model fitting; 0: background; 1 successful parameter estimation). If a noise map was provided through the noisefile input parameter (see below), then additional output NIFTI files storing quality of fit metrics are stored, i.e.: *_logL.nii (log-likelihood at maximum), *_BIC.nii (Bayesian Information Criterion) and *_AIC.nii (Akaike Information Criterion)')
