@@ -14,7 +14,7 @@ class HistoMRIWarp():
 	'''HistoMRIWarp is a class to manage 2D histology-to-MRI registration based on
 	   DiPy symmetric diffeomorphic registration.
 	   Author: Francesco Grussu, Vall d Hebron Institute of Oncology
-	           <fgrussu@vhio.net><francegrussu@gmail.com>
+	           <fgrussu@vhio.net>
 	'''		                       
 	def __init__(self,niter=100,itol=0.001,stp=0.25,sgm=0.2,otol=1e-05,levpyr=[960,480,240,120,60,30],preproc=None):
 		''' Constructor initialising the hyper-parameters for 2D histology-to-MRI registration
