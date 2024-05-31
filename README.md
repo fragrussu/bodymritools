@@ -59,5 +59,5 @@ Tools facilitating the comparison of histological data to MRI scans and paramete
 
 ## _misctools_ scripts
 Tools that MRI researchers may find useful in their day-to-day life. For example:
-* [**segnrrd2nii.py**](https://github.com/fragrussu/bodymritools/blob/main/misctools/segnrrd2nii.py): a tool converting a segmentation drawn in [3D Slicer](https://www.slicer.org) and stored in .nrrd format, into a .nii segmentation, given a reference NIFTI file.
+* [**segnrrd2nii.py**](https://github.com/fragrussu/bodymritools/blob/main/misctools/segnrrd2nii.py): a tool converting a segmentation drawn in [3D Slicer](https://www.slicer.org) and stored in Nrrd format (.nrrd) into a NIFTI (.nii) segmentation, given a reference NIFTI file. Manual [here](https://github.com/fragrussu/bodymritools/blob/main/manuals/segnrrd2nii.md).
 
