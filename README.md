@@ -63,5 +63,6 @@ Cancer Res 2014, 74(7): 1902-1912, doi: [10.1158/0008-5472.CAN-13-2511](https://
 
 ## _misctools_ scripts
 [_misctools_](https://github.com/fragrussu/bodymritools/tree/main/misctools) make be useful to MRI researchers in their day-to-day life. These are:
+* [**ArtworkResample.py**](https://github.com/fragrussu/bodymritools/blob/main/misctools/ArtworkResample.py): a tool _**resizing Bitmap images to a specific width in inches and resolution in DPI**_. Different journals typically require paper figures with sizes/resolutions that vary from journal to journal - this tool enables quick and painless conversions for the most common file formats (e.g., PNG, TIFF, JPEG, etc). Manual [here](https://github.com/fragrussu/bodymritools/blob/main/manuals/ArtworkResample.md).
 * [**segnrrd2nii.py**](https://github.com/fragrussu/bodymritools/blob/main/misctools/segnrrd2nii.py): a tool _**converting a Nrrd segmentation to NIFTI**_. For example, Nrrd segments drawn in [3D Slicer](https://www.slicer.org) and stored in Nrrd format (.nrrd) into a NIFTI (.nii) label mask, given a reference NIFTI file. Manual [here](https://github.com/fragrussu/bodymritools/blob/main/manuals/segnrrd2nii.md).
 
