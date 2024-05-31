@@ -61,7 +61,7 @@ def unbiasSM(dwi,noise,outfile,nsa=1,bv=None):
        Pieciak T. et al, Proc ISMRM 2022, p.3900 (SM_unbiased = SM - 0.5*sigma^2/SM). 
        
        Author: Francesco Grussu, July 2023. 
-       Email: <fgrussu@vhio.net><francegrussu@gmail.com>. 
+       Email: <fgrussu@vhio.net>. 
        
        Third-party dependencies: numpy, nibabel. 
        Developed with numpy 1.23.5 and nibabel 5.1.0.
@@ -183,7 +183,7 @@ def unbiasSM(dwi,noise,outfile,nsa=1,bv=None):
 if __name__ == "__main__":
 
     ### Parse arguments or print help
-    parser = argparse.ArgumentParser(description='Mitigate the noise floor bias in spherical mean diffusion-weighted signals using the analytical expression of Pieciak T. et al, Proc ISMRM 2022, p.3900 (SM_unbiased = SM - 0.5*sigma^2/SM). Author: Francesco Grussu, July 2023. Email: <fgrussu@vhio.net><francegrussu@gmail.com>. Third-party dependencies: numpy, nibabel. Developed with numpy 1.23.5 and nibabel 5.1.0.')
+    parser = argparse.ArgumentParser(description='Mitigate the noise floor bias in spherical mean diffusion-weighted signals using the analytical expression of Pieciak T. et al, Proc ISMRM 2022, p.3900 (SM_unbiased = SM - 0.5*sigma^2/SM). Author: Francesco Grussu, July 2023. Email: <fgrussu@vhio.net>. Third-party dependencies: numpy, nibabel. Developed with numpy 1.23.5 and nibabel 5.1.0.')
     parser.add_argument('dwi', help='path of a 4D NIFTI file storing diffusion MRI data. The NIFTI file can either i) already contain spherical mean data at fixed b-value, or ii) contain images acquired at different gradient directions; in this case, the spherical mean will be computed. The default is i); to flag that the input images corresponds to different gradient directions, pass a b-value list via option --bval (see below).')
     parser.add_argument('sigma', help='path of a 3D NIFTI file storing a voxel-wise noise map (standard deviation of Gaussian/Rician noise). This can be obained, for example, via Marchenko-Pastur Principal Component Analysis (Veraart J et al, NeuroImage 2016).')
     parser.add_argument('out', help='path of a 4D NIFTI file storing the unbiased spherical mean. If the input file contained images corresponding to different gradient directions, as flagged by passing a b-value file with option --bv, then the output file will have fewer volumes than the inut file, as it will contain spherical mean signals. In this case, additional text file, where "*.bval_sph_mean" is appended to the output file name, will be saved, to store the b-values of the spherical mean signals.')
