@@ -3,7 +3,7 @@
 #   This code is distributed under the Attribution-NonCommercial-ShareAlike 4.0 International license ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)).
 #   Its use MUST also comply with the requirements of the individual licenses of all its dependencies.
 #
-# Resample an image to PNG or TIFF with a given size and DPI
+# Resample an image to PNG or TIFF with a given size and desired DPI
 #
 # Author: Francesco Grussu <fgrussu@vhio.net>
 
