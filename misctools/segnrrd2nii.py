@@ -31,7 +31,7 @@ def convert(segfile, reffile, outfile, outcsv):
 	   
 	   AUTHOR
 	   Francesco Grussu, Vall d Hebron Institute of Oncology, Barcelona (Spain), April-May 2021
-	   Email: <francegrussu@gmail.com> <fgrussu@vhio.net>
+	   Email: <fgrussu@vhio.net>
 	   
 	'''
 
@@ -128,7 +128,7 @@ def convert(segfile, reffile, outfile, outcsv):
 if __name__=="__main__":
 
 	### Print help and parse arguments
-	parser = argparse.ArgumentParser(description='Convert a .seg.nrrd segmentation to NIFTI, borrowing the header from a reference NIFTI file. Author: Francesco Grussu, Vall d Hebron Institute of Oncology, Barcelona (Spain), April-May 2021. Email: <francegrussu@gmail.com> <fgrussu@vhio.net>.')
+	parser = argparse.ArgumentParser(description='Convert a .seg.nrrd segmentation to NIFTI, borrowing the header from a reference NIFTI file. Author: Francesco Grussu, Vall d Hebron Institute of Oncology, Barcelona (Spain), April-May 2021. Email: <fgrussu@vhio.net>.')
 	parser.add_argument('seg', help='Segmentation file in NRRD format (.seg.nrrd, as those provided by Slicer)')
 	parser.add_argument('ref', help='Reference scan in NIFTI format (a.k.a. "master scan" using Slicer nomenclature)')
 	parser.add_argument('out', help='Output file storing the segmentation converted to NIFTI format')
