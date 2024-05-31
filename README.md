@@ -58,8 +58,9 @@ Cancer Res 2014, 74(7): 1902-1912, doi: [10.1158/0008-5472.CAN-13-2511](https://
 
 ## _histotools_ scripts
 Tools facilitating the comparison of histological data to MRI scans and parameteric maps.
-* [**getPatchMapFromQuPath.py**](https://github.com/fragrussu/bodymritools/blob/main/histotools/getPatchMapFromQuPath.py): tool transforming a list of cell detection measurements obtained from [QuPath](https://qupath.github.io) into a patch-wise 2D NIFTI map. The computation of patch-wise maps from histology is demonstrated, for example, in Grussu F et al, Magn Res Med 2022, 88(1): 365-379, doi: [10.1002/mrm.29174](https://doi.org/10.1002/mrm.29174). Manual [here](https://github.com/fragrussu/bodymritools/blob/main/manuals/getPatchMapFromQuPath.md).
-
+* [**getPatchMapFromQuPath.py**](https://github.com/fragrussu/bodymritools/blob/main/histotools/getPatchMapFromQuPath.py): tool transforming a list of cell detection measurements obtained from [QuPath](https://qupath.github.io) into a patch-wise 2D NIFTI map. The computation of patch-wise maps from histology follows the methodology shown in Grussu F et al, Magn Res Med 2022, 88(1): 365-379, doi: [10.1002/mrm.29174](https://doi.org/10.1002/mrm.29174). The same metrics as in that paper are computed. Manual [here](https://github.com/fragrussu/bodymritools/blob/main/manuals/getPatchMapFromQuPath.md).
+* [**getHistoDensity.py**](https://github.com/fragrussu/bodymritools/blob/main/histotools/getHistoDensity.py): tool similar to the above, but including the calculation of additional metrics (e.g., cell counts, etc), as detailed in the manual [here](https://github.com/fragrussu/bodymritools/blob/main/manuals/getHistoDensity.md).
+* 
 ## _misctools_ scripts
 Tools that MRI researchers may find useful in their day-to-day life. For example:
 * [**segnrrd2nii.py**](https://github.com/fragrussu/bodymritools/blob/main/misctools/segnrrd2nii.py): a tool converting a segmentation drawn in [3D Slicer](https://www.slicer.org) and stored in Nrrd format (.nrrd) into a NIFTI (.nii) segmentation, given a reference NIFTI file. Manual [here](https://github.com/fragrussu/bodymritools/blob/main/manuals/segnrrd2nii.md).
