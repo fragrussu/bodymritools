@@ -1,4 +1,4 @@
-This scripts can be called directly from the command line. 
+This script can be called directly from the command line. Its input parameters are the following: 
 
 ```
 usage: getAdcAkc.py [-h] [--mask <file>] [--noise <file>] [--savg <num>] [--nw <num>] [--pmin <list>] [--pmax <list>] [--ncpu <num>]
