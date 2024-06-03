@@ -41,6 +41,8 @@ options:
 ```
 Additionally, you can load the script directly into your python code as a module. The module has been organised as follows:
 ```
+Help on module getHistoDensity:
+
 NAME
     getHistoDensity
 
