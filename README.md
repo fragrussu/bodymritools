@@ -32,7 +32,8 @@ _bodymritools_ has been written in python 3.10.9 ([anaconda](https://www.anacond
 * [nibabel](https://nipy.org/nibabel) (developed with version '5.1.0')
 * [numpy](https://numpy.org) (developed with version '1.23.5')
 * [scipy](https://scipy.org) (developed with version '1.10.1')
-
+* [pynrrd](https://pypi.org/project/pynrrd) (developed with version '1.0.0')
+  
 Third-party packages have been developed by different authors and have their own licenses. **The use of _bodymritools_ MUST also comply with the individual licenses of all of its dependencies.**
 
 
