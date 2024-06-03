@@ -260,7 +260,7 @@ def run(mrifile, sdictfile, pdictfile, output, maskfile=None, noisefile=None, na
 	    * mrifile:    path of a 4D NIFTI file storing M quantitative MRI measurements acquired
 	                  (e.g., diffusion MRI at different b-values and/or diffusion time; relaxometry at
 	                  increasing echo times; etc). Each voxel should contain a signal defined in [0; 1].
-					  In diffusion MRI, this can be obtained by dividing each voxel for the signal at b = 0
+	                  In diffusion MRI, this can be obtained by dividing each voxel for the signal at b = 0
 	                  
 	    * sdictfile:  path of a NumPy binary file (.npy) storing a dictionary of synthetic MRI measurements to be used for
 	                  model fitting. The file should contain a variable storing a 2D numpy matrix of size Nmicro x M,
