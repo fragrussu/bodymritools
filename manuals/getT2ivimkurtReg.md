@@ -1,5 +1,6 @@
 This script can be called directly from the command line. Its input parameters are the following:
-´´´
+
+```
 usage: getT2ivimkurtReg.py [-h] [--mask <file>] [--sigma <file>] [--nsa <value>] [--ncpu <value>] [--grid <value>] [--pmin <list>] [--pmax <list>] [--wtk <value>] dwi scheme out
 
 Non-linear least square fitting with offset-Gaussian noise model and Tikhonov regularisation of the two-pool T2-IVIM-Kurtosis model to diffusion MRI images obtained by varying b-value b and echo time TE. This provides voxel-
@@ -33,4 +34,4 @@ options:
   --wtk <value>   Tikhonov regularisation weight used in the fitting objective function (default 0.0; if set to 0.0, no regularisation is performed. Note that an effective regularisation weight value will depend on the range
                   on which the MRI signal is defined: for instance, for an MRI signal varying in the range [0; SMAX], resonable regularisation weights are of the order of approx SMAX/3)
 
-´´´
+```
