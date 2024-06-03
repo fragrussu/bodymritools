@@ -1,3 +1,4 @@
+```
 usage: getAdcAkc.py [-h] [--mask <file>] [--noise <file>] [--savg <num>] [--nw <num>] [--pmin <list>] [--pmax <list>] [--ncpu <num>]
                     [--sldim <num>] [--nlalgo <string>]
                     s_file bval_file out
@@ -38,3 +39,4 @@ options:
   --nlalgo <string>  algorithm to be used for constrained objective function minimisation in non-linear fitting. Choose among: "Nelder-Mead",
                      "L-BFGS-B", "TNC", "SLSQP", "Powell", and "trust-constr" (default: "trust-constr" - see documentation of
                      scipy.optimize.minimize for information on the optimisation algorithm)   
+```
