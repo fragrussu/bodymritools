@@ -4,7 +4,7 @@ This repository contains several scripts and routines that one may find useful f
 https://github.com/fragrussu/bodymritools/blob/main/logos/bodymritools.png
 
 <div align="center">
-  <img src="https://github.com/fragrussu/bodymritools/blob/main/logos/bodymritools.png" alt="MRHistoillustration" width="750" height="auto">
+  <img src="https://github.com/fragrussu/bodymritools/blob/main/logos/bodymritools.png" alt="MRHistoillustration" width="900" height="auto">
 </div>
 
 **The project that gave rise to these results received the support of a fellowship from ”la Caixa” Foundation (ID 100010434). The fellowship code is "LCF/BQ/PR22/11920010"**. 
