@@ -269,7 +269,7 @@ def run(mrifile, sdictfile, pdictfile, output, maskfile=None, noisefile=None, na
 	                  while the different MRI measurements coming from a given microstructure are arranged along columns. 
 	                  NOTE 1: the quantitative MRI protocol used to generate "sdictfile" MUST match that used to acquire 
 	                  the scan to fit stored in the "mrifile" NIFTI
-					  NOTE 2: the signal dictionary should be defined in [0; 1]
+	                  NOTE 2: the signal dictionary should be defined in [0; 1]
 	    
 	    * pdictfile:  path of a NumPy binary file (.npy) storing a dictionary of tissue parameters corresponding to the 
 	                  signals stored in the signal dictionary "sdictfile", to be used for model fitting. 
