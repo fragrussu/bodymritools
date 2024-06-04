@@ -1,7 +1,6 @@
 # bodymritools
 
 This repository contains several scripts and routines that one may find useful for the analysis of Magnetic Resonance Imaging (MRI) - mainly diffusion MRI (dMRI) - and histological data in body applications, as for example in liver imaging. The tools have been developed by Francesco Grussu as part of a **”la Caixa” Foundation** Junior Leader fellowship at the **Vall d'Hebron Institute of Oncology (VHIO)**, Barcelona (Spain). Contact: <fgrussu@vhio.net>.
-https://github.com/fragrussu/bodymritools/blob/main/logos/bodymritools.png
 
 <div align="center">
   <img src="https://github.com/fragrussu/bodymritools/blob/main/logos/bodymritools.png" alt="MRHistoillustration" width="900" height="auto">
