@@ -231,7 +231,7 @@ FUNCTIONS
         - numpy 1.21.5
         - scipy 1.7.3
         
-        Author: Francesco Grussu, Vall d'Hebron Institute of Oncology, November 2022
+        Author: Francesco Grussu, Vall d'Hebron Institute of Oncology, November 2024
                 <fgrussu@vhio.net>
 
 ```
