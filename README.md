@@ -7,10 +7,7 @@ This repository contains several scripts and routines that one may find useful f
 
 **The project that gave rise to these results received the support of a fellowship from ”la Caixa” Foundation (ID 100010434). The fellowship code is "LCF/BQ/PR22/11920010"**. 
 
-If you use _bodymritools_ for your research, please cite our preprint:
-
-Anna Kira Voronova a b, Athanasios Grigoriou a b, Kinga Bernatowicz a, Sara Simonetti a, Garazi Serna a, Núria Roson c d, Manuel Escobar c d, Maria Vieito e, Paolo Nuciforo a, Rodrigo Toledo a, Elena Garralda e, Els Fieremans f, Dmitry S. Novikov f, Marco Palombo g h, Raquel Perez-Lopez a 1
-, Francesco Grussu a 1
+If you use _bodymritools_ for your research, please cite our paper:
 
 *Anna Kira Voronova, Athanasios Grigoriou, Kinga Bernatowicz, Sara Simonetti, Garazi Serna, Núria Roson, Manuel Escobar, Maria Vieito, Paolo Nuciforo, Rodrigo Toledo, Elena Garralda, Els Fieremans, Dmitry S. Novikov, Marco Palombo, Raquel Perez-Lopez, Francesco Grussu*. **"SpinFlowSim: A blood flow simulation framework for histology-informed diffusion MRI microvasculature mapping in cancer"**. Medical Image Analysis 2025, 102: 103531, doi: [10.1016/j.media.2025.103531](https://doi.org/10.1016/j.media.2025.103531).
 <div align="center">
