@@ -11,7 +11,7 @@ If you use _bodymritools_ for your research, please cite our paper:
 
 *Anna Kira Voronova, Athanasios Grigoriou, Kinga Bernatowicz, Sara Simonetti, Garazi Serna, Núria Roson, Manuel Escobar, Maria Vieito, Paolo Nuciforo, Rodrigo Toledo, Elena Garralda, Els Fieremans, Dmitry S. Novikov, Marco Palombo, Raquel Perez-Lopez, Francesco Grussu*. **"SpinFlowSim: A blood flow simulation framework for histology-informed diffusion MRI microvasculature mapping in cancer"**. Medical Image Analysis 2025, 102: 103531, doi: [10.1016/j.media.2025.103531](https://doi.org/10.1016/j.media.2025.103531).
 <div align="center">
-  <img src="https://github.com/fragrussu/bodymritools/blob/main/logos/media.png" alt="QRpreprint" width="700" height="auto">
+  <img src="https://github.com/fragrussu/bodymritools/blob/main/logos/mediashot.png" alt="MedIA" width="700" height="auto">
 </div>
 
 ## License
