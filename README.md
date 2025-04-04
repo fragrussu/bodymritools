@@ -1,4 +1,4 @@
-# bodymritools
+# BodyMRITools
 <div align="center">
   <img src="https://github.com/fragrussu/bodymritools/blob/main/logos/bodymritools.png" alt="MRHistoillustration" width="900" height="auto">
 </div>
