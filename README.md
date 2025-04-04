@@ -9,7 +9,10 @@ This repository contains several scripts and routines that one may find useful f
 
 If you use _bodymritools_ for your research, please cite our preprint:
 
-*Francesco Grussu, Kinga Bernatowicz, Marco Palombo, Irene Casanova-Salas, Ignasi Barba, Sara Simonetti, Garazi Serna, Athanasios Grigoriou, Anna Voronova, Valezka Garay, Juan Francisco Corral, Marta Vidorreta, Pablo Garcia-Polo Garcia, Xavier Merino, Richard Mast, Nuria Roson, Manuel Escobar, Maria Vieito, Rodrigo Toledo, Paolo Nuciforo, Joaquin Mateo, Elena Garralda, Raquel Perez-Lopez*. **"Histology-informed liver diffusion MRI: biophysical model design and demonstration in cancer immunotherapy"**.  medRxiv 2024: 2024.04.26.24306429, doi: [10.1101/2024.04.26.24306429](https://doi.org/10.1101/2024.04.26.24306429). 
+Anna Kira Voronova a b, Athanasios Grigoriou a b, Kinga Bernatowicz a, Sara Simonetti a, Garazi Serna a, Núria Roson c d, Manuel Escobar c d, Maria Vieito e, Paolo Nuciforo a, Rodrigo Toledo a, Elena Garralda e, Els Fieremans f, Dmitry S. Novikov f, Marco Palombo g h, Raquel Perez-Lopez a 1
+, Francesco Grussu a 1
+
+*Anna Kira Voronova, Athanasios Grigoriou, Kinga Bernatowicz, Sara Simonetti, Garazi Serna, Núria Roson, Manuel Escobar, Maria Vieito, Paolo Nuciforo, Rodrigo Toledo, Elena Garralda, Els Fieremans, Dmitry S. Novikov, Marco Palombo, Raquel Perez-Lopez, Francesco Grussu*. **"SpinFlowSim: A blood flow simulation framework for histology-informed diffusion MRI microvasculature mapping in cancer"**. Medical Image Analysis 2025, 102: 103531, doi: [10.1016/j.media.2025.103531](https://doi.org/10.1016/j.media.2025.103531).
 <div align="center">
   <img src="https://github.com/fragrussu/bodymritools/blob/main/logos/media.png" alt="QRpreprint" width="700" height="auto">
 </div>
