@@ -7,7 +7,7 @@ This repository contains several scripts and routines that one may find useful f
 
 **The project that gave rise to these results received the support of a fellowship from ”la Caixa” Foundation (ID 100010434). The fellowship code is "LCF/BQ/PR22/11920010"**. 
 
-If you use _bodymritools_ for your research, please cite at least the first of these papers --- ideally, all: 
+If you use _bodymritools_ for your research, please cite at least the first of these papers (and ideally, all of them!): 
 
 *Francesco Grussu et al*. **"Clinically feasible liver tumour cell size measurement through histology-informed in vivo diffusion MRI"**. Communications Medicine 2025 (in press), doi: [10.1038/s43856-025-01246-2](https://doi.org/10.1038/s43856-025-01246-2).
 <div align="center">
