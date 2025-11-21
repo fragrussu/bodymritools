@@ -7,11 +7,11 @@ This repository contains several scripts and routines that one may find useful f
 
 **The project that gave rise to these results received the support of a fellowship from ”la Caixa” Foundation (ID 100010434). The fellowship code is "LCF/BQ/PR22/11920010"**. 
 
-If you use _bodymritools_ for your research, please cite our papers:
+If you use _bodymritools_ for your research, please cite at least the first of this paper --- ideally, all: 
 
-*Francesco Grussu, Athanasios Grigoriou, Kinga Bernatowicz, Marco Palombo, Irene Casanova-Salas, Daniel Navarro-Garcia, Ignasi Barba, Sara Simonetti, Garazi Serna, Carlos Macarro, Anna Kira Voronova, Valezka Garay, Juan Francisco Corral, Marta Vidorreta, Pablo García-Polo García, Xavier Merino, Richard Mast, Núria Rosón, Manuel Escobar, Maria Vieito, Rodrigo Toledo, Paolo Nuciforo, Joaquin Mateo, Elena Garralda & Raquel Perez-Lopez*. **"Clinically feasible liver tumour cell size measurement through histology-informed in vivo diffusion MRI"**. Communications Medicine 2025 (in press), doi: [10.1038/s43856-025-01246-2](https://doi.org/10.1038/s43856-025-01246-2).
+*Francesco Grussu et al*. **"Clinically feasible liver tumour cell size measurement through histology-informed in vivo diffusion MRI"**. Communications Medicine 2025 (in press), doi: [10.1038/s43856-025-01246-2](https://doi.org/10.1038/s43856-025-01246-2).
 
-*Anna Kira Voronova, Athanasios Grigoriou, Kinga Bernatowicz, Sara Simonetti, Garazi Serna, Núria Roson, Manuel Escobar, Maria Vieito, Paolo Nuciforo, Rodrigo Toledo, Elena Garralda, Els Fieremans, Dmitry S. Novikov, Marco Palombo, Raquel Perez-Lopez, Francesco Grussu*. **"SpinFlowSim: A blood flow simulation framework for histology-informed diffusion MRI microvasculature mapping in cancer"**. Medical Image Analysis 2025, 102: 103531, doi: [10.1016/j.media.2025.103531](https://doi.org/10.1016/j.media.2025.103531).
+*Anna Kira Voronova et al, and Francesco Grussu*. **"SpinFlowSim: A blood flow simulation framework for histology-informed diffusion MRI microvasculature mapping in cancer"**. Medical Image Analysis 2025, 102: 103531, doi: [10.1016/j.media.2025.103531](https://doi.org/10.1016/j.media.2025.103531).
 <div align="center">
   <img src="https://github.com/fragrussu/bodymritools/blob/main/logos/mediashot.png" alt="MedIA" width="950" height="auto">
 </div>
