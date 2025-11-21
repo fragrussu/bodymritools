@@ -10,10 +10,14 @@ This repository contains several scripts and routines that one may find useful f
 If you use _bodymritools_ for your research, please cite at least the first of this paper --- ideally, all: 
 
 *Francesco Grussu et al*. **"Clinically feasible liver tumour cell size measurement through histology-informed in vivo diffusion MRI"**. Communications Medicine 2025 (in press), doi: [10.1038/s43856-025-01246-2](https://doi.org/10.1038/s43856-025-01246-2).
+<div align="center">
+  <img src="https://github.com/fragrussu/bodymritools/blob/main/logos/commmedshot.png" alt="CommMed" width="650" height="auto">
+</div>
+
 
 *Anna Kira Voronova et al, and Francesco Grussu*. **"SpinFlowSim: A blood flow simulation framework for histology-informed diffusion MRI microvasculature mapping in cancer"**. Medical Image Analysis 2025, 102: 103531, doi: [10.1016/j.media.2025.103531](https://doi.org/10.1016/j.media.2025.103531).
 <div align="center">
-  <img src="https://github.com/fragrussu/bodymritools/blob/main/logos/mediashot.png" alt="MedIA" width="950" height="auto">
+  <img src="https://github.com/fragrussu/bodymritools/blob/main/logos/mediashot.png" alt="MedIA" width="650" height="auto">
 </div>
 
 
