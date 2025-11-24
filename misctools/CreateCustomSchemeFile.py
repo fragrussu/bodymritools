@@ -7,7 +7,7 @@ import sys, argparse
 if __name__ == "__main__":
 
 	### Parse arguments or print help
-	parser = argparse.ArgumentParser(description='text')
+	parser = argparse.ArgumentParser(description='Creates a scheme file for pgse2sandi.py for an acquisition with multiple b-values and one, fixed diffusion time.')
 	parser.add_argument('bval', help='path a a text file storing b-values (FSL format; in s/mm2; one raw, space-separated)')
 	parser.add_argument('gdur', help='scalar indicating the gradient duration (in ms) used for the acquisition of all b-values')
 	parser.add_argument('gsep', help='scalar indicating the gradient separation (in ms) used for the acquisition of all b-values')
