@@ -9,7 +9,7 @@ This repository contains several scripts and routines that one may find useful f
 
 If you use _bodymritools_ for your research, please cite at least the first of these papers (and ideally, all of them!): 
 
-*Francesco Grussu et al*. **"Clinically feasible liver tumour cell size measurement through histology-informed in vivo diffusion MRI"**. Communications Medicine 2025 (in press), doi: [10.1038/s43856-025-01246-2](https://doi.org/10.1038/s43856-025-01246-2).
+*Francesco Grussu et al*. **"Clinically feasible liver tumour cell size measurement through histology-informed in vivo diffusion MRI"**. Communications Medicine 2025, 5: 535, doi: [10.1038/s43856-025-01246-2](https://doi.org/10.1038/s43856-025-01246-2).
 <div align="center">
   <img src="https://github.com/fragrussu/bodymritools/blob/main/logos/cmdsh.png" alt="CommMed" width="650" height="auto">
 </div>
