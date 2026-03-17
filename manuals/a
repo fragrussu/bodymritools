@@ -1,1 +1,6 @@
 This script can be called directly from the command line. Its input parameters are the following:
+
+
+
+
+Additionally, you can load the script directly into your python code as a module. The module has been organised as follows:
