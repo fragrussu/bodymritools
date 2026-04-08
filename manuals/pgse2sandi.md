@@ -123,9 +123,9 @@ eSM=False)
                       *_Dsomaum2ms.nii (intrinsic soma diffusivity in um2/ms),
                       *_Dexum2ms.nii (extra-neurite, extra-soma apparent diffusion coefficient in um2/ms),
                       *_Rsomaum.nii (soma radius in um),
-                                      *_Fin_voxel.nii (intra-neurite voxel fraction)
-                                      *_Fex_voxel.nii (extra-neurite, extra-soma  voxel fraction)
-                                      *_Fsoma_voxel.nii (some voxel fraction)
+                      *_Fin_voxel.nii (intra-neurite voxel fraction)
+                      *_Fex_voxel.nii (extra-neurite, extra-soma  voxel fraction)
+                      *_Fsoma_voxel.nii (some voxel fraction)
                       *_S0.nii (estimate of the MRI signal at b = 0),
                       *_exit.nii (voxel-wise exit code; -1: warning, error in model fitting; 0: background;
                                   1 successful parameter estimation).
