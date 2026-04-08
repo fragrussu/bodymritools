@@ -1,6 +1,5 @@
 This script can be called directly from the command line. Its input parameters are the following: 
 ```
-(mriproc) default:~/lib/python/repos/bodymritools/mrifittools$ python pgse2sandi.py -h
 usage: pgse2sandi.py [-h] [--mask <file>] [--noise <file>] [--nw <num>] [--reg <Lnorm,weight>]
                      [--pmin <p1min,...,p7min>] [--pmax <p1max,...,p7max>] [--ncpu <num>]
                      [--sldim <num>] [--nlalgo <string>] [--sm <flag>]
